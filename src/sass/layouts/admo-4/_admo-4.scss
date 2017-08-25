@@ -1,0 +1,118 @@
+.add-balance{
+  max-width: $max-block-size;
+  margin: auto;
+  padding: 12px;
+}
+.add-balance__title{
+  @include xs(padding,20px 10px);
+  width: 100%;
+  background: #fff;
+  padding: 20px 40px;
+  margin-top: 20px;
+  a{
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 20px;
+    width: 100px;
+  }
+  p{
+    font-family: Helvetica;
+    font-size: 15px;
+  }
+}
+.pay-to{
+  @include xs(padding,20px 10px);
+  width: 100%;
+  padding: 0 40px;
+  margin-top: 20px;
+  p{
+    display: inline-block;
+    width: 50px;
+    font-family: Helvetica;
+  }
+  input{
+    border-radius: 3px;
+    border:1px solid #dcdcdc;
+    padding:2px 5px;
+    margin: 0 5px;
+  }
+}
+.payment-methods{
+  @include xs(padding,20px 10px);
+  width: 100%;
+  margin: 20px 0;
+  background: #fff;
+  padding: 70px 40px;
+  &__title{
+    font-family: Helvetica;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+.pm-item{
+  width: 270px;
+  display: inline-block;
+  &_img{
+    height: 40px;
+    width: 135px;
+    display: inline-block;
+    background-image: url(../images/payment-img.png);
+  }
+  input{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+}
+.img1{
+  background-position: -37px -14px;
+  width: 205px;
+}
+.img2{
+  background-position: -379px -8px;
+}
+.img3{
+  background-position: -687px -13px;
+}
+.img4{
+  background-position: -37px -74px;
+  width: 80px;
+}
+.img5{
+  background-position: -379px -73px;
+}
+.pay{
+  width: 190px;
+  margin-top: 40px;
+  cursor: pointer;
+  display: block;
+  background: #ffe400;
+  border:none;
+  font-family: Helvetica;
+  font-size: 17px;
+  padding: 13px 0;
+}
+.radio{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border:1px solid #dddddd;
+  border-radius: 50%;
+  vertical-align: top;
+  margin-top: 9px;
+}
+.r-item{
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 2.5px 0 0 3px;
+  cursor: pointer;
+}
+.r-item-red{
+  background: red;
+}

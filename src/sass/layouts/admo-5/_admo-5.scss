@@ -1,0 +1,82 @@
+.ads-panel{
+  width: 100%;
+
+}
+.panel-title{
+  width: 100%;
+  background: #fff;
+  padding: 40px 50px;
+  margin-top: 30px;
+  font-family: Helvetica;
+  font-size: 20px;
+}
+.panel-item{
+  padding: 20px 50px;
+  width: 100%;
+  display: block;
+  width: 100%;
+  background: #fff;
+  margin-top: 20px;
+  padding-right: 15px;
+  img{
+    @include sm(display,block);
+    @include sm(width,60%);
+    @include xs(width,90%);
+    @include sm(margin,10px auto);
+    width: 220px;
+    display: inline-block;
+  }
+}
+.panel-item::after{
+  clear: both;
+  content:"";
+  display: block;
+}
+.panel-info{
+  @include sm(display,block);
+  @include sm(width,60%);
+  @include xs(width,90%);
+  @include sm(margin,10px auto);
+  display: inline-block;
+  width: 330px;
+  vertical-align: top;
+  margin-left: 10px;
+  &-title{
+    @include xs(font-size,15px);
+    text-transform: uppercase;
+    color:#585757;
+    font-size: 17px;
+    font-family: helvetica;
+  }
+}
+.video-date{
+  font-family: helvetica;
+  margin-top: 30px;
+  display: block;
+  color:#969696;
+}
+.status-true{
+  font-family: $Muller-Thin-DEMO;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.pay{
+  @include sm(float,none);
+  @include sm(display,block);
+  @include sm(margin,20px auto);
+  background: #ffe400;
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  padding: 11px;
+  font-size: 18px;
+  font-family: Helvetica;
+  vertical-align: top;
+  float: right;
+  margin-top: 40px;
+}
+// .pay::after{
+//   clear: both;
+//   content:"";
+//   display: block;
+// }

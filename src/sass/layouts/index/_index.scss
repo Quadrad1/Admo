@@ -1,0 +1,243 @@
+
+// content
+.content{
+  width: 100%;
+  background: #f5f5f5;
+}
+.main-input{
+  width: 100%;
+  padding: 20px 20px;
+  border:1px dashed #0099ff;
+  margin: 34px 0;
+  border-radius: 2px;
+}
+.video-bloks{
+  background: #f5f5f5;;
+}
+.video-menu{
+  width: 100%;
+  padding-bottom: 20px;
+      background: #fff;
+  display: flex;
+}
+.video-menu-item-active{
+  background: #fff!important;
+}
+.video-menu-item{
+  @include sm(font-size,15px);
+  @include xs(font-size,13px);
+  @include xs(height,43px);
+  width: 25%;
+  height: 60px;
+  background: #efefef;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  display: flex;
+  color:#a7a7a7;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: Helvetica;
+  img{
+    @include xs(display,none);
+    margin: 0 5px;
+  }
+}
+.videos{
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0px 3px 4px 0px #d8d8d8;
+}
+
+.play-video{
+  max-width: 100%;
+}
+.views{
+  width: 330px;
+  padding: 15px;
+  border-radius: 3px;
+  background: #fff;
+  color:#dcdcdc;
+  font-size: 18px;
+  font-family: Helvetica;
+  margin-top: 30px;
+  position: relative;
+}
+.views::after{
+  content: '';
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0px;
+  bottom: -8px;
+  border: 22px solid transparent;
+  border-left: 19px solid #fff;
+  border-top: 0px solid #fff;
+
+}
+.scale{
+  margin-top: 20px;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 17px;
+  padding: 0;
+  background: #eaecec;
+
+}
+  /* Линия-ндикатор для Firefox */
+input[type=range]::-moz-range-track {
+  background: none;
+  border: none;
+  }
+    /* ползунок в Firefox */
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+ }
+       /* ползунок в Хроме */
+ input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+   width:30px;
+   height:30px;
+   border-radius: 50%;
+   border: 5px solid #fff;
+   background: #ff0000;
+}
+.counter{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  &-views{
+    @include xs(font-size, 9px);
+    font-size: 13px;
+    font-family: Helvetica;
+    color: #969292;
+  }
+  &-views:first-child{
+    @include xs(display, none);
+  }
+  &-views:last-child{
+    @include xs(display, none);
+  }
+}
+.start-compaing{
+  @include xs(width,270px);
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  background: #ffe400;
+  font-size: 18px;
+  color:#333;
+  font-family: Helvetica;
+  width: 370px;
+  margin: 20px auto;
+  margin-top: 50px;
+}
+.icons{
+  @include md(justify-content,space-around);
+  width: 100%;
+  padding: 0;
+  margin-top: 40px;
+  background:#f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 105px;
+
+}
+.icon-item{
+
+  width: 30%;
+  flex-basis: 290px;
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+.icon-img{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/content-icons.png);
+  background-repeat: no-repeat;
+  background-size: 540px;
+  margin: 0 10px;
+
+}
+.ii-1{
+  background-position: 0px -4px;
+}
+.ii-2{
+  background-position: -250px -3px;
+}
+.ii-3{
+  background-position: -502px -2px;
+}
+.ii-4{
+  background-position: 0px -82px;
+}
+.ii-5{
+  background-position: -250px -82px;
+}
+.ii-6{
+  background-position: -502px -82px;
+}
+.icon_title{
+  width: 250px;
+  font-family: Helvetica;
+  font-size: 15px;
+  line-height: 22px;
+}
+// footer
+.footer-cont{
+  max-width: 980px;
+  margin: auto;
+  background: #fff;
+}
+.footer-menu{
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  height: 110px;
+  align-items: center;
+
+  color: #0066cc;
+  font-family: Helvetica;
+  font-size: 15px;
+  &-item{
+    margin: auto;
+    @include xs(width,60%);
+  }
+}
+.pay-system{
+  max-width: 480px;
+  background-image: url(../images/pay-system-bg.png);
+  background-repeat: no-repeat;
+  margin: auto;
+  background-position: bottom center;
+  overflow: hidden;
+  background-size: contain;
+}
+.sub-footer{
+  width: 100%;
+  background: #fff;
+}
+.privacy{
+  margin: 50px 0;
+  margin-bottom: 70px;
+
+  color: #0066cc;
+  font-family: Helvetica;
+  font-size: 15px;
+}
+.privacy:hover{
+  text-decoration: underline;
+}
